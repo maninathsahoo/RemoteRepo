@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+
+<body>
+{% block content %}
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6 banner-info" >
+            <h1 class="big-text" style="margin-top: 0"><u>About Us</u></h1>
+            <p >DURGA SOFTWARE SOLUTIONS an ISO 9001:2008 Certified Organization,a divsion of Durga  organizations is
+        the one and only place providing in-depth training on all latest Java/J2ee technologies and Java
+        Certifications for the last decade. DURGA SOFT curriculum is not based on any book or any training material.
+        It follows the exact curriculum mentioned by SUN Microsystems(ORACLE at present).
+        The courses are designed to keep pace  with the changing needs and times.
+        DURGA SOFT teaches every topic starting from the fundamentals to the  most advanced  levels,
+        with the most experienced trainers and with the most effective training methodologies
+            </p>
+            <a class="btn btn-first" href="#">Login</a>
+            <a class="btn btn-second" href="#">SignUp</a>
+        </div>
+        <div class="col-sm-6 banner-image">
+
+            <img src="{% static 'images/edu1.jpg' %}" class="img-resposive">
+        </div>
+    </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>
